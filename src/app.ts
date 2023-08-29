@@ -1,25 +1,13 @@
-
 import express from 'express';
+import gptRouter from './routes/gpt';
 
-import routes from './routes';
+const app = express();
 
-class App {
-  public server;
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-  constructor() {
-    this.server = express();
+//routes
+app.use('/gpt', gptRouter);
 
-    this.middlewares();
-    this.routes();
-  }
 
-  middlewares() {
-    this.server.use(express.json());
-  }
-
-  routes() {
-    this.server.use(routes);
-  }
-}
-
-export default new App().server;
+export default app;
