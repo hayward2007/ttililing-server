@@ -1,0 +1,23 @@
+{
+  "name": "ttililing-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hayward2007/ttililing-server",
+  "author": "hayward2007 <65775702+hayward2007@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "build": "tsc --project ./",
+    "dev": "nodemon src/server.ts",
+    "prod": "node dist/server.js"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.7",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
