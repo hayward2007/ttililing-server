@@ -6,6 +6,7 @@
   "author": "hayward2007 <65775702+hayward2007@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.5.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "openai": "^4.3.1"
